@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.investmentcalc">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Investment Calculator"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+        <activity  android:name=".SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:label="@string/app_name" android:name=".PageMain"/>
+        <activity android:label="@string/app_name" android:name=".MainActivity"/>
+        <activity android:label="@string/app_name" android:name=".CurrencyConverter"/>
+        <activity android:label="@string/app_name" android:name=".ReturnRate"/>
+        <activity android:label="@string/app_name" android:name=".StartingAmount"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5757791727452293~4938060708"/>
+    </application>
+
+</manifest>
